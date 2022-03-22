@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-quick-action-panel header="Payload Data" title="new data">
+        <p>{payloadData}</p>
+        <p>heyyy</p>
+        <div slot="footer">
+            <lightning-button class="slds-float_right slds-button_brand" onclick={createPdf} label="Download PDF"></lightning-button>
+            <!-- <a href={downloadURL} download="Payload.docx" class="slds-button slds-button_brand slds-float_left" >Download Document</a>  -->
+            <a href={text} class="slds-button slds-button_brand" download={payloadData}>Download Text File</a>
+          <!-- <lightning-button variant="brand" label="Download PDF" class="slds-m-left_x-small"></lightning-button> -->
+        </div>
+    </lightning-quick-action-panel>
+</template>
